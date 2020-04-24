@@ -56,7 +56,7 @@
     <button
       type="submit"
       class="btn btn-primary"
-      :disabled='form.wynagrodzenieKwota < 0'
+      :disabled="form.wynagrodzenieKwota < 0"
       @click.prevent="addNewEmployee"
     >
       Dodaj

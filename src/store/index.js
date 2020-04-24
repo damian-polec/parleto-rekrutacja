@@ -73,8 +73,9 @@ export default new Vuex.Store({
               sections[employee.dzial][employee.wynagrodzenieWaluta] +
               +employee.wynagrodzenieKwota;
           } else {
-            sections[employee.dzial][employee.wynagrodzenieWaluta] =
-              +employee.wynagrodzenieKwota;
+            sections[employee.dzial][
+              employee.wynagrodzenieWaluta
+            ] = +employee.wynagrodzenieKwota;
           }
         }
         return sections;
@@ -109,12 +110,12 @@ export default new Vuex.Store({
     },
     addEmployee: ({ dispatch, commit }, newEmployee) => {
       commit("ADD_EMPLOYEE", newEmployee);
-      dispatch('initEmployees');
-      dispatch('initSections');
-      dispatch('calculateSalaries');
+      dispatch("initEmployees");
+      dispatch("initSections");
+      dispatch("calculateSalaries");
     },
-    calculateSalaries: ({commit}) => {
-      commit("CALCULATE_SALARIES", employees)
+    calculateSalaries: ({ commit }) => {
+      commit("CALCULATE_SALARIES", employees);
     }
   },
   getters: {

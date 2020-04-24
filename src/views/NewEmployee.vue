@@ -21,7 +21,7 @@ export default {
   methods: {
     addNewEmployee() {
       this.$store.dispatch("addEmployee", this.form);
-      this.$router.push('/');
+      this.$router.push("/");
     }
   },
   components: {

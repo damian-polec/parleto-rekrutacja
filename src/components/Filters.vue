@@ -62,7 +62,12 @@
           </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" @click.prevent="onFilter" :disabled='filters.salary.max < 0 || filters.salary.min < 0'>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        @click.prevent="onFilter"
+        :disabled="filters.salary.max < 0 || filters.salary.min < 0"
+      >
         Filtruj
       </button>
     </form>

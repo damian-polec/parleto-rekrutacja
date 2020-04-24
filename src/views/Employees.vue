@@ -20,7 +20,9 @@
             ></app-employee>
           </tbody>
         </table>
-        <p class="text-center" v-if='employees.length <= 0'><strong>Żaden z pracowników nie spełnia kryteriów</strong></p>
+        <p class="text-center" v-if="employees.length <= 0">
+          <strong>Żaden z pracowników nie spełnia kryteriów</strong>
+        </p>
       </div>
       <app-filters></app-filters>
     </div>

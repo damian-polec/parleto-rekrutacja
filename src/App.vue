@@ -16,8 +16,8 @@ export default {
   },
   created() {
     this.$store.dispatch("initEmployees");
-    this.$store.dispatch('calculateSalaries');
-    this.$store.dispatch('initSections');
+    this.$store.dispatch("calculateSalaries");
+    this.$store.dispatch("initSections");
   }
 };
 </script>
